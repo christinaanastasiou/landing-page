@@ -1,0 +1,77 @@
+// styles only for IE 9
+.section {
+    &__image {
+        text-align: center;
+    }
+}
+.card {
+    &__image {
+        width: 120px;
+        margin: 0 auto 15px;
+        border: none;
+    }
+}
+@media screen and (min-width: 541px) {
+    .section {
+        &__wrapper {
+            &--second {
+                display: table;
+            }
+        }
+    }
+}
+@media screen and (min-width: 541px) and (max-width: 768px) {
+    .card {
+        display: table;
+
+        &__image {
+            display: table-cell;
+        }
+        &__details {
+            display: table-cell;
+            vertical-align: middle;
+            padding-left: 10px;
+        }
+    }
+}
+@media screen and (min-width: 769px) {
+    .nav {
+        &__menu {
+            display: table;
+            
+            li {
+                display: table-cell;
+                vertical-align: middle;
+            }
+        }
+    }
+    .section {
+        &__wrapper {
+            &--first {
+                display: table;
+                direction: rtl;
+            }
+        }
+        &__info {
+            display: table-cell;
+            vertical-align: middle;
+            direction: ltr;
+        }
+        &__image {
+            display: table-cell;
+            direction: ltr;
+        }
+        &__card {
+            display: table-cell;
+        }
+    }
+    .card {
+        &__image {
+            width: 150px;
+            margin: 0 auto 20px;
+        }
+        &__details {
+            width: 96%;
+        }
+    }
+}
